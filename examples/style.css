@@ -1,0 +1,12 @@
+main {
+  margin: auto;
+  max-width: fit-content;
+  padding-top: 200px;
+}
+div {
+  float: left;
+  text-align: center;
+}
+img {
+  width: 354px;
+}

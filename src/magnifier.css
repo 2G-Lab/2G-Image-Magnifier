@@ -1,0 +1,72 @@
+/* Normal view */
+img.x2G_expandable {
+  cursor:   pointer;
+  transition: 0.50s;
+}
+img.x2G_expandable:hover {
+  opacity:      0.6;
+}
+
+/* Expanded view */
+#x2G_outerBox {
+  display:   none;
+  overflow:  auto;
+  position: fixed;
+  top:          0;
+  left:         0;
+  z-index:      1;
+  box-sizing: border-box;
+  width:            100%;
+  height:           100%;
+  padding:          16px;
+  padding-bottom:   64px;
+  background-color: #555566;
+}
+#x2G_closeBut {
+  float:          right;
+  padding-left:    24px;
+  padding-right:   24px;
+  color:      #BBFFFF;
+  font-size:        3em;
+  font-weight:     bold;
+  transition:     0.25s;
+}
+#x2G_closeBut:hover,
+#x2G_closeBut:focus {
+  color:      #FFBBBB;
+  text-decoration: none;
+  cursor:       pointer;
+}
+
+#x2G_captions {
+  padding:         24px;
+  color:      #FFFFFF;
+  font-size:      1.5em;
+  text-align:    center;
+}
+
+#x2G_expImage {
+  display: block;
+  overflow: auto;
+  width:    100%;
+  cursor:   auto;
+}
+#x2G_expImage:hover {
+  opacity:   1.0;
+}
+
+/* Animation */
+#x2G_expImage, #x2G_captions {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to   {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to   {transform:scale(1)}
+}

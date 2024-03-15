@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Magnifier Example</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/magnifier.css">
+    <script src="../src/magnifier.s.js"></script>
+    <script>
+      window.onload = (event) => {new x2G_ImageMagnifier ("images2magnify")}
+    </script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="./img-0.png" alt="NOT expandable image">
+        <p><em>NOT expandable image</em></p>
+      </div>
+      <div>
+        <img src="./img-1.png" alt="Expandable image 1" class="images2magnify">
+        <p><em>Expandable image 1</em></p>
+      </div>
+      <div>
+        <img src="./img-2.png" alt="Expandable image 2" class="images2magnify">
+        <p><em>Expandable image 2</em></p>
+      </div>
+    </main>
+  </body>
+</html>
